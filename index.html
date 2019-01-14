@@ -4,7 +4,7 @@
 </head>
 <body>
   <script>
-    var xmlhttp = new HMLHttpRequest();//displays json
+    var xmlhttp = new XMLHttpRequest();//displays json
     xmlhttp.onreadystatechange = function() {
       if(this.readyState == 4 && this.status == 200){ //4 is ready 200 is okay
         var mydata = JSON.parse(this.responseText);
