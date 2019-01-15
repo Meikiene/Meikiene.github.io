@@ -8,10 +8,10 @@
     xmlhttp.onreadystatechange = function() {
       if(this.readyState == 4 && this.status == 200){ //4 is ready 200 is okay
         var mydata = JSON.parse(this.responseText);
-        window.alert(mydata.name);
+        window.alert(mydata.bento[0].price);
       }
     };
-    xmlhttp.open("GET","sample.json",true);
+    xmlhttp.open("GET","bento.json",true);
     xmlhttp.send();
   </script>
 </body>
