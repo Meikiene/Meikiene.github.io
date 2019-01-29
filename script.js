@@ -2,6 +2,7 @@
     xmlhttp.onreadystatechange = function() {
       if(this.readyState == 4 && this.status == 200){ //4 is ready 200 is okay
         var mydata = JSON.parse(this.responseText);
+      }
 function enterFood1(){
   var qty1 = document.getElementById('itemQty1').value;
   var total= mydata.food[0].price * qty1;
@@ -103,7 +104,6 @@ function enterFood6(){
   document.getElementById('currentTotal').innerHTML = "Your total: $" + totalC.toFixed(2);
   localStorage.setItem("totalP6", totalC);
 }
-  }
     };
 xmlhttp.open("GET", "Food.json", true);
 xmlhttp.send();
