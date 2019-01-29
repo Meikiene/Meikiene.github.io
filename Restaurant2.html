@@ -1,0 +1,20 @@
+<html>
+  <head>
+   <link rel="stylesheet" href="project.css">
+  </head>
+  <body>
+     <div id="headerBox"><h1>Restaurant</h1></div>
+     <script>
+       var price = localStorage.getItem('totalP');
+       var price2 = localStorage.getItem('totalP2');
+       var price3 = localStorage.getItem('totalP3');
+       var price4 = localStorage.getItem('totalP4');
+       var price5 = localStorage.getItem('totalP5');
+       var price6 = localStorage.getItem('totalP6');
+       var totalPrice = price + price2 + price3 + price4 + price5 + price6;
+       var totalPriceWTax = totalPrice * 1.472;
+       var yourTax = totalPrice * 0.472;
+       document.getElementById('currentTotal').innerHTML = "Your total: $" + totalPriceWTax.toFixed(2);
+     </script>
+  </body>
+</html>

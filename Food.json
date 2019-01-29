@@ -1,0 +1,33 @@
+{
+"food": [{
+  "name":"Palabok",
+  "price": 11.99,
+  "description": "A family size plate full of noodles, eggs, and vegetables."
+},
+{
+  "name":"Chicken Adobo",
+  "price": 12.49,
+  "description": "A filipino dish with its main ingredient being chicken."
+},
+{
+  "name":"Nilaga",
+  "price": 8.99,
+  "description": "A filipino soup dish."
+},
+{
+  "name":"Lumpia",
+  "price": 7.49,
+  "description": "Filipino version of eggroll."
+},
+{
+  "name": "Halo-Halo",
+  "price":5.49,
+  "description": "A filipino icecream dessert."
+},
+{
+  "name": "Buko Pandan",
+  "price": 4.99,
+  "description": "A filipino coconut dessert."
+}
+]
+}

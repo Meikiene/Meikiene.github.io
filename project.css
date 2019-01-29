@@ -1,0 +1,102 @@
+body{
+  margin:0;
+  background-image: url('Background.jpeg');
+  background-size:cover;
+}
+h1{
+  color: #4c414b;
+}
+h2{
+  color: #4c414b;
+}
+#headerBox{
+  height: 10vh;
+  background-color: #d8b6d5;
+  border-style: solid;
+  border-color: #4c414b;
+  border-width: 0px 0px 4px 0px;
+}
+#itemOne{
+  width:30vw;
+  height:35vh;
+  background-image: url('Pancit.jpeg');
+  background-size: cover;
+  float: left;
+  margin-left: 35px;
+  border-style: solid;
+  border-color: #4c414b;
+}
+#itemTwo{
+  width:30vw;
+  height:35vh;
+  background-image: url('Adobo.jpeg');
+  background-size: cover;
+  float: left;
+  margin-left: 35px;
+  border-style: solid;
+  border-color: #4c414b;
+}
+#itemThree{
+  width:30vw;
+  height:35vh;
+  background-image: url('Nilaga.jpeg');
+  background-size: cover;
+  float:left;
+  margin-left: 35px;
+  border-style: solid;
+  border-color: #4c414b;
+}
+#itemFour{
+  width:30vw;
+  height:35vh;
+  background-image: url('Lumpia.jpeg');
+  background-size: cover;
+  float: left;
+  margin-left: 35px;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: #4c414b;
+}
+#itemFive{
+  width:30vw;
+  height:35vh;
+  background-image: url('Halo.jpeg');
+  background-size: cover;
+  float: left;
+  margin-left: 35px;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: #4c414b;
+}
+#itemSix{
+  width:30vw;
+  height:35vh;
+  background-image: url('Buko.jpeg');
+  background-size: cover;
+  float: left;
+  margin-left: 35px;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: #4c414b;
+}
+#totalBoxPrice{
+  width: 90vw;
+  height: 50vh;
+  background-color: #ffedfd;
+  border-style: solid;
+  border-color: #4c414b;
+  float:left;
+  margin-top: 20px;
+  margin-left: 70px;
+  /*margin-left: 478px;
+  margin-top: 20px; */
+}
+/*button{
+  width: 5vw;
+  height: 3vh;
+}
+input{
+ margin-left: 8vw;
+ margin-top: 8vh;
+ height: 3vh;
+}*/
