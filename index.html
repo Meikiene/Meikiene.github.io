@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="project.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div id="headerBox"><h1>Restaurant</h1></div>
+    <div>
+      <h3 id ="displayTotal()"></h3>
+      </div>
+    <div id="itemOne">
+      <h2>Palabok</h2>
+      <h5 id="currentPrice"></h5>
+      <input type="number" id="itemQty1" min="0">
+      <button onclick="enterFood1()">Order Now</button>
+    </div>
+    <div id="itemTwo">
+      <h2>Chicken Adobo</h2>
+      <input type="number" id="itemQty2" min="0">
+      <button onclick="enterFood2()">Order Now</button>
+    </div>
+    <div id="itemThree">
+      <h2>Nilaga</h2>
+      <input type="number" id="itemQty3" min="0">
+      <button onclick="enterFood3()">Order Now</button>
+    </div>
+    <div id="itemFour">
+      <h2>Lumpia</h2>
+      <input type="number" id="itemQty4" min="0">
+      <button onclick="enterFood4()">Order Now</button>
+    </div>
+    <div id="itemFive">
+      <h2>Halo-Halo</h2>
+      <input type="number" id="itemQty5" min="0">
+      <button onclick="enterFood5()">Order Now</button>
+    </div>
+    <div id="itemSix">
+      <h2>Buko Pandan</h2>
+      <input type="number" id="itemQty6" min="0">
+      <button onclick="enterFood6()">Order Now</button>
+    </div>
+    <div id="totalBoxPrice">
+      <h1>Your Order:</h1>
+      <h1 id= "currentOrder"></h1>
+      <h1 id= "currentOrder2"></h1>
+      <h1 id= "currentOrder3"></h1>
+      <h1 id= "currentOrder4"></h1>
+      <h1 id= "currentOrder5"></h1>
+      <h1 id= "currentOrder6"></h1>
+      <h1 id="currentTotal">Total:</h1>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
