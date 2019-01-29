@@ -2,16 +2,19 @@
     xmlhttp.onreadystatechange = function() {
       if(this.readyState == 4 && this.status == 200){ //4 is ready 200 is okay
         var mydata = JSON.parse(this.responseText);
-       
-//var totalCurrentPrice = [];
-//var qty1 = document.getElementById('itemQty1').value;
-//var qty2 = document.getElementById('itemQty2').value;
+        document.getElementById('name1').innerHTML = mydata.food[0].name;
+        document.getElementById('foodP1').innerHTML = mydata.food[0].price;
+        //local.setItem("food1", mydata.food[0].price);
+        //local.setItem("foodn1", mydata.food[0].name);
+      }
+    };
 function enterFood1(){
   var qty1 = document.getElementById('itemQty1').value;
-  var total= mydata.food[0].price * qty1;
- window.alert(total);
+  var foodp1 = document.getElementById('foodP1').innerHTML;
+  var foodn1 = document.getElementById('name1').innerHTML;
+  var total= foodp1 * qty1;
   var totalPrice = total;
-  var currentPrice = document.getElementById('currentOrder').innerHTML = mydata.food[0].name + " x " + qty1 +" = $" + totalPrice.toFixed(2);
+  var currentPrice = document.getElementById('currentOrder').innerHTML = foodn1 + " x " + qty1 +" = $" + totalPrice.toFixed(2);
   localStorage.setItem("total1", totalPrice);
   var price2 = localStorage.getItem('total2');
   var price3 = localStorage.getItem('total3');
@@ -107,7 +110,6 @@ function enterFood6(){
   var totalC = parseFloat(price1) + parseFloat(price2) + parseFloat(price3) + parseFloat(price4) + parseFloat(price5) + total;
   document.getElementById('currentTotal').innerHTML = "Your total: $" + totalC.toFixed(2);
   localStorage.setItem("totalP6", totalC);
-}
 }
 xmlhttp.open("GET", "Food.json", true);
 xmlhttp.send();
