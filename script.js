@@ -9,6 +9,7 @@
 function enterFood1(){
   var qty1 = document.getElementById('itemQty1').value;
   var total= mydata.food[0].price * qty1;
+ window.alert(total);
   var totalPrice = total;
   var currentPrice = document.getElementById('currentOrder').innerHTML = mydata.food[0].name + " x " + qty1 +" = $" + totalPrice.toFixed(2);
   localStorage.setItem("total1", totalPrice);
