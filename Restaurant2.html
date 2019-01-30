@@ -4,17 +4,43 @@
   </head>
   <body>
      <div id="headerBox"><h1>Restaurant</h1></div>
+     <div id="totalBoxPrice">
+     <h1 id="showHere"></h1>
+     <h1 id="thankUNext"></h1>
+     <button onclick="addTip()">Add 5% Tip</button>
+     <button onclick="addTip2()">Add 10% Tip</button>
+     <button onclick="addTip3()">Add 15% Tip</button>
+     <button onclick="goBack()">Order Again</button>
+    </div>
      <script>
-       var price = localStorage.getItem('totalP');
-       var price2 = localStorage.getItem('totalP2');
-       var price3 = localStorage.getItem('totalP3');
-       var price4 = localStorage.getItem('totalP4');
-       var price5 = localStorage.getItem('totalP5');
-       var price6 = localStorage.getItem('totalP6');
-       var totalPrice = price + price2 + price3 + price4 + price5 + price6;
-       var totalPriceWTax = totalPrice * 1.472;
-       var yourTax = totalPrice * 0.472;
-       document.getElementById('currentTotal').innerHTML = "Your total: $" + totalPriceWTax.toFixed(2);
+       var price = localStorage.getItem('totalSum');
+       var totalTaxPrice = price * 1.04712;
+       document.getElementById('showHere').innerHTML = "Your Total: $" + totalTaxPrice.toFixed(2);
+
+       function addTip(){
+         document.getElementById('showHere').innerHTML = "";
+         var newPrice = totalTaxPrice * 1.05;
+         document.getElementById('showHere').innerHTML ="Your New Total: $" + newPrice.toFixed(2);
+         document.getElementById('thankUNext').innerHTML = "~THANK YOU FOR THE TIP MAHALO!~"
+       }
+       
+       function addTip2(){
+         document.getElementById('showHere').innerHTML = "";
+         var newPrice = totalTaxPrice * 1.10;
+         document.getElementById('showHere').innerHTML ="Your New Total: $" + newPrice.toFixed(2);
+         document.getElementById('thankUNext').innerHTML = "~THANK YOU FOR THE TIP MAHALO!~"
+       }
+
+       function addTip3(){
+         document.getElementById('showHere').innerHTML = "";
+         var newPrice = totalTaxPrice * 1.15;
+         document.getElementById('showHere').innerHTML ="Your New Total: $" + newPrice.toFixed(2);
+         document.getElementById('thankUNext').innerHTML = "~THANK YOU FOR THE TIP MAHALO!~"
+       }
+       
+       function goBack(){
+        location.href = "index.html";
+       }
      </script>
   </body>
 </html>

@@ -8,37 +8,96 @@
     <div>
       <h3 id ="displayTotal()"></h3>
       </div>
+
+    <!-------------------------------ITEM ONE-------------------------------->
     <div id="itemOne">
-      <h2>Palabok</h2>
-      <h5 id="currentPrice"></h5>
-      <input type="number" id="itemQty1" min="0">
+      <h2 id="item_one_name"></h2>
+      <h5 id="item_one_price"></h5>
+      <!--<input type="number" id="itemQty1" min="1">-->
+      <select id="itemQty1">
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+      </select>
       <button onclick="enterFood1()">Order Now</button>
     </div>
-    <div id="itemTwo">
-      <h2>Chicken Adobo</h2>
-      <input type="number" id="itemQty2" min="0">
+
+     <!-------------------------------ITEM TWO-------------------------------->
+     <div id="itemTwo">
+      <h2 id="item_two_name"></h2>
+      <h5 id="item_two_price"></h5>
+      <!--<input type="number" id="itemQty2" min="1">-->
+      <select id="itemQty2">
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+      </select>
       <button onclick="enterFood2()">Order Now</button>
     </div>
+    
+    <!-------------------------------ITEM THREE--------------------------------->
     <div id="itemThree">
-      <h2>Nilaga</h2>
-      <input type="number" id="itemQty3" min="0">
+      <h2 id="item_three_name"></h2>
+      <h5 id="item_three_price"></h5>
+      <!--<input type="number" id="itemQty3" min="1">-->
+      <select id="itemQty3">
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+      </select>
       <button onclick="enterFood3()">Order Now</button>
     </div>
+    
+    <!-------------------------------ITEM FOUR--------------------------------->
     <div id="itemFour">
-      <h2>Lumpia</h2>
-      <input type="number" id="itemQty4" min="0">
+      <h2 id="item_four_name"></h2>
+      <h5 id="item_four_price"></h5>
+      <!--<input type="number" id="itemQty4" min="1">-->
+      <select id="itemQty4">
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+      </select>
       <button onclick="enterFood4()">Order Now</button>
     </div>
+    
+    <!-------------------------------ITEM FIVE--------------------------------->
     <div id="itemFive">
-      <h2>Halo-Halo</h2>
-      <input type="number" id="itemQty5" min="0">
+      <h2 id="item_five_name"></h2>
+      <h5 id="item_five_price"></h5>
+      <!--<input type="number" id="itemQty5" min="1">-->
+      <select id="itemQty5">
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+      </select>
       <button onclick="enterFood5()">Order Now</button>
     </div>
+    <!-------------------------------ITEM SIX--------------------------------->
     <div id="itemSix">
-      <h2>Buko Pandan</h2>
-      <input type="number" id="itemQty6" min="0">
+      <h2 id="item_six_name"></h2>
+      <h5 id="item_six_price"></h5>
+      <!--<input type="number" id="itemQty6" min="1">-->
+      <select id="itemQty6">
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+      </select>
       <button onclick="enterFood6()">Order Now</button>
     </div>
+  
     <div id="totalBoxPrice">
       <h1>Your Order:</h1>
       <h1 id= "currentOrder"></h1>
@@ -47,7 +106,8 @@
       <h1 id= "currentOrder4"></h1>
       <h1 id= "currentOrder5"></h1>
       <h1 id= "currentOrder6"></h1>
-      <h1 id="currentTotal">Total:</h1>
+      <h1 id="currentTotal"></h1>
+      <button onclick="getAll()">CHECKOUT</button>
       </div>
     <script src="script.js"></script>
   </body>
