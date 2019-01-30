@@ -20,33 +20,41 @@ xmlhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) { //4 is ready 200 is okay
     var mydata = JSON.parse(this.responseText);
 
+
+    if (priceArr < 1) {
+      document.getElementById('checkout').style.visibility = "hidden";
+    }
+    else {
+      document.getElementById('checkout').style.visibility = "visible";
+    }
+
     foodname1 = mydata.food[0].name; //save the name as foodname1
     document.getElementById('item_one_name').innerHTML = mydata.food[0].name; //Output name to HTML
     foodprice1 = mydata.food[0].price; //save the price as foodprice1
     document.getElementById('item_one_price').innerHTML = mydata.food[0].price;
   
-    foodname2 = mydata.food[1].name; 
-    document.getElementById('item_two_name').innerHTML = mydata.food[1].name; 
+    foodname2 = mydata.food[1].name;
+    document.getElementById('item_two_name').innerHTML = mydata.food[1].name;
     foodprice2 = mydata.food[1].price;
     document.getElementById('item_two_price').innerHTML = mydata.food[1].price;
 
-    foodname3 = mydata.food[2].name; 
-    document.getElementById('item_three_name').innerHTML = mydata.food[2].name; 
+    foodname3 = mydata.food[2].name;
+    document.getElementById('item_three_name').innerHTML = mydata.food[2].name;
     foodprice3 = mydata.food[2].price;
     document.getElementById('item_three_price').innerHTML = mydata.food[2].price;
     
-    foodname4 = mydata.food[3].name; 
-    document.getElementById('item_four_name').innerHTML = mydata.food[3].name; 
+    foodname4 = mydata.food[3].name;
+    document.getElementById('item_four_name').innerHTML = mydata.food[3].name;
     foodprice4 = mydata.food[3].price;
     document.getElementById('item_four_price').innerHTML = mydata.food[3].price;
 
-    foodname5 = mydata.food[4].name; 
-    document.getElementById('item_five_name').innerHTML = mydata.food[4].name; 
+    foodname5 = mydata.food[4].name;
+    document.getElementById('item_five_name').innerHTML = mydata.food[4].name;
     foodprice5 = mydata.food[4].price;
     document.getElementById('item_five_price').innerHTML = mydata.food[4].price;
 
-    foodname6 = mydata.food[5].name; 
-    document.getElementById('item_six_name').innerHTML = mydata.food[5].name; 
+    foodname6 = mydata.food[5].name;
+    document.getElementById('item_six_name').innerHTML = mydata.food[5].name;
     foodprice6 = mydata.food[5].price;
     document.getElementById('item_six_price').innerHTML = mydata.food[5].price;
 
@@ -75,6 +83,7 @@ xmlhttp.onreadystatechange = function () {
 };
 //*****************BUTTON FOR FOOD 1******************//
 function enterFood1() {
+  document.getElementById('checkout').style.visibility = "visible";
   var qty1 = document.getElementById('itemQty1').value;
   var total = foodprice1 * qty1;
   priceArr.push(total);
@@ -85,12 +94,12 @@ function enterFood1() {
   }
   document.getElementById('currentTotal').innerHTML = "Your Current Total: $" + sum.toFixed(2);
   //END SUM of array values
-
   var currentPrice = document.getElementById('currentOrder').innerHTML = foodname1 + " x " + qty1 + " = $" + total.toFixed(2);
 }
 
 //*****************BUTTON FOR FOOD 2******************//
 function enterFood2() {
+  document.getElementById('checkout').style.visibility = "visible";
   var qty2 = document.getElementById('itemQty2').value;
   var total = foodprice2 * qty2;
   priceArr.push(total);
@@ -107,6 +116,7 @@ function enterFood2() {
 
 //*****************BUTTON FOR FOOD 3******************//
 function enterFood3() {
+  document.getElementById('checkout').style.visibility = "visible";
   var qty3 = document.getElementById('itemQty3').value;
   var total = foodprice3 * qty3;
   priceArr.push(total);
@@ -124,6 +134,7 @@ function enterFood3() {
 
 //*****************BUTTON FOR FOOD 4******************//
 function enterFood4() {
+  document.getElementById('checkout').style.visibility = "visible";
   var qty4 = document.getElementById('itemQty4').value;
   var total = foodprice4 * qty4;
   priceArr.push(total);
@@ -141,6 +152,7 @@ function enterFood4() {
 
 //*****************BUTTON FOR FOOD 5******************//
 function enterFood5() {
+  document.getElementById('checkout').style.visibility = "visible";
   var qty5 = document.getElementById('itemQty5').value;
   var total = foodprice5 * qty5;
   priceArr.push(total);
@@ -158,6 +170,7 @@ function enterFood5() {
 
 //*****************BUTTON FOR FOOD 6******************//
 function enterFood6() {
+  document.getElementById('checkout').style.visibility = "visible";
   var qty6 = document.getElementById('itemQty6').value;
   var total = foodprice6 * qty6;
   priceArr.push(total);
