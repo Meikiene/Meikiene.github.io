@@ -9,8 +9,11 @@ h1{
 h2{
   color: #4c414b;
 }
+h5{
+  color: #4c414b;
+}
 #headerBox{
-  height: 10vh;
+  height: 20vh;
   background-color: #d8b6d5;
   border-style: solid;
   border-color: #4c414b;
