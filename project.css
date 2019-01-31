@@ -14,6 +14,9 @@ h2{
 h5{
   color: #4c414b;
 }
+.fp{
+  display: inline;
+}
 #headerBox{
   height: 20vh;
   background-color: #d8b6d5;
