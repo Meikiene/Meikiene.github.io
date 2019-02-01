@@ -3,26 +3,195 @@ body{
   background-image: url('Background.jpeg');
   background-size:cover;
 }
+.titleName{
+  text-align: center;
+  font-size: 4.5vh;
+  margin: auto;
+}
+.titleName2{
+  font-size: 3.5vh;
+}
+#thankUNext{
+  font-size: 2.25vh;
+  text-align: center;
+}
+#showHere{
+  font-size: 3vh;
+  text-align: center;
+}
+.saveMe{
+  font-size: 13px;
+  color: #4c4c4c;
+  margin-top: 5px;
+  height: 10%;
+  border-width: 1px;
+  border-color: #4c414b;
+  background-color: #ffedfd;
+}
+#item_one_price{
+  color: #4c414b;
+  font-size: 3vh;
+
+}
+#item_two_price{
+  color: #4c414b;
+  font-size: 3vh;
+  
+}
+#item_three_price{
+  color: #4c414b;
+  font-size: 3vh;
+}
+#item_four_price{
+  color: #4c414b;
+  font-size: 3vh;
+}
+#item_five_price{
+  color: #4c414b;
+  font-size: 3vh;
+
+}
+#item_six_price{
+  color: #4c414b;
+  font-size: 3vh;
+
+}
+#item_one_name{
+  color: #4c414b;
+  font-size: 3vh;
+
+}
+#item_two_name{
+  color: #4c414b;
+  font-size: 3vh;
+  
+}
+#item_three_name{
+  color: #4c414b;
+  font-size: 3vh;
+}
+#item_four_name{
+  color: #4c414b;
+  font-size: 3vh;
+}
+#item_five_name{
+  color: #4c414b;
+  font-size: 3vh;
+
+}
+#item_six_name{
+  color: #4c414b;
+  font-size: 3vh;
+
+}
+#currentOrder{
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+#currentOrder2{
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+#currentOrder3{
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+#currentOrder4{
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+#currentOrder5{
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+#currentOrder6{
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+#currentTotal{
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+.readjust{
+  margin-left: 90%;
+  width: 70vw;
+  height: 70vh;
+}
+.pf{
+  display:inline;
+}
+.options{
+font-size: 13px;
+color: #4c4c4c;
+border-width: 1px;
+border-color: #4c414b;
+background-color: #ffedfd;
+height: 8%;
+width: 10%;
+margin-left: 5px;
+}
+.fButton{
+font-size: 13px;
+color: #4c4c4c;
+border-width: 1px;
+border-color: #4c414b;
+background-color: #ffedfd;
+height: 8%;
+width: 15%;
+margin-left: 5px;
+}
+#checkout{
+font-size: 13px;
+color: #4c4c4c;
+border-width: 1px;
+border-color: #4c414b;
+background-color: #ffedfd;
+height: 5%;
+width: 5%;
+margin-left: 15px;
+}
 h1{
   color: #4c414b;
-  text-align: center;
-  
+  font-size: 3vh;
 }
 h2{
   color: #4c414b;
 }
 h5{
-  color: #4c414b;
+  color: #4c414b
+}
+h3{
+  color: #4c414b
+}
+
+.boxes{
+  background-color: rgba(255, 251, 251, 0.541);
+
 }
 .fp{
   display: inline;
+  font-size: 3vh;
+  background-color: rgba(250, 250, 250, 0.2);
+}
+.buttonBox{
+  width: 5vw;
+  height: 30vh;
+  margin-left: 10px;
+}
+.backgroundbox{
+margin-top: 10px;
 }
 #headerBox{
-  height: 20vh;
+  height: 12vh;
   background-color: #d8b6d5;
   border-style: solid;
   border-color: #4c414b;
   border-width: 0px 0px 4px 0px;
+}
+#titleBox{
+  width: 15vw;
+  height: 15vh;
+  margin: auto;
 }
 #itemOne{
   width:30vw;
@@ -31,6 +200,7 @@ h5{
   background-size: cover;
   float: left;
   margin-left: 35px;
+  margin-top: 35px;
   border-style: solid;
   border-color: #4c414b;
 }
@@ -41,6 +211,7 @@ h5{
   background-size: cover;
   float: left;
   margin-left: 35px;
+  margin-top: 35px;
   border-style: solid;
   border-color: #4c414b;
 }
@@ -51,6 +222,7 @@ h5{
   background-size: cover;
   float:left;
   margin-left: 35px;
+  margin-top: 35px;
   border-style: solid;
   border-color: #4c414b;
 }
@@ -61,7 +233,7 @@ h5{
   background-size: cover;
   float: left;
   margin-left: 35px;
-  margin-top: 20px;
+  margin-top: 35px;
   border-style: solid;
   border-color: #4c414b;
 }
@@ -72,7 +244,7 @@ h5{
   background-size: cover;
   float: left;
   margin-left: 35px;
-  margin-top: 20px;
+  margin-top: 35px;
   border-style: solid;
   border-color: #4c414b;
 }
@@ -83,21 +255,31 @@ h5{
   background-size: cover;
   float: left;
   margin-left: 35px;
-  margin-top: 20px;
+  margin-top: 35px;
   border-style: solid;
   border-color: #4c414b;
 }
-#totalBoxPrice{
-  /*width: 90vw;
-  height: 50vh;*/
+#totalBoxPrice1{
+  width: 90vw;
+  height: 50vh;
   background-color: #ffedfd;
   border-style: solid;
   border-color: #4c414b;
   float:left;
-  margin-top: 20px;
+  margin-top: 35px;
   margin-left: 70px;
-  max-width: 90vw;
-  max-height: 50vh;
+  /*margin-left: 478px;
+  margin-top: 20px; */
+}
+#totalBoxPrice2{
+  width: 45vw;
+  height: 28vh;
+  background-color: #ffedfd;
+  border-style: solid;
+  border-color: #4c414b;
+  float:left;
+  margin-top: 35px;
+  margin-left: 27vw;
   /*margin-left: 478px;
   margin-top: 20px; */
 }

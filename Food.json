@@ -1,5 +1,6 @@
 {
-"food": [{
+"food": [
+{
   "name":"Palabok",
   "price": 11.99,
   "description": "A family size plate full of noodles, eggs, and vegetables."

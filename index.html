@@ -4,110 +4,115 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
-    <div id="headerBox"><h1>Restaurant</h1></div>
-    <div>
-      <h3 id ="displayTotal()"></h3>
-      </div>
+    <div id="headerBox">
+      <div id="titleBox" ><h1 class="titleName">Mikaela's Restaurant</h1></div>
+    </div>
 
     <!-------------------------------ITEM ONE-------------------------------->
     <div id="itemOne">
-      <h2 id="item_one_name"></h2>
-      <h5 class ="fp">$</h5><h5 class ="fp" id="item_one_price"></h5>
+      <div class="boxes"><h1 class="fp" id="item_one_name"><h1 class="fp">:</h1><h3 class="fp"> $</h3><h3 class="fp" id="item_one_price"></h3></div>
       <!--<input type="number" id="itemQty1" min="1">-->
-      <select id="itemQty1">
+      <div class="backgroundBox">
+      <select class="options" id="itemQty1">
         <option value = "1">1</option>
         <option value = "2">2</option>
         <option value = "3">3</option>
         <option value = "4">4</option>
         <option value = "5">5</option>
       </select>
-      <button onclick="enterFood1()">Order Now</button>
+      <button onclick="enterFood1()" class="fButton">Order Now</button>
+    </div>
     </div>
 
      <!-------------------------------ITEM TWO-------------------------------->
      <div id="itemTwo">
-      <h2 id="item_two_name"></h2>
-      <h5 class ="fp">$</h5><h5 class ="fp" id="item_two_price"></h5>
+      <div class="boxes"><h1 class="fp" id="item_two_name"><h1 class="fp">:</h1><h3 class="fp"> $</h3><h3 class="fp" id="item_two_price"></h3></div>
       <!--<input type="number" id="itemQty2" min="1">-->
-      <select id="itemQty2">
+      <div class="backgroundBox">
+      <select class="options" id="itemQty2">
         <option value = "1">1</option>
         <option value = "2">2</option>
         <option value = "3">3</option>
         <option value = "4">4</option>
         <option value = "5">5</option>
       </select>
-      <button onclick="enterFood2()">Order Now</button>
+      <button onclick="enterFood2()" class="fButton">Order Now</button>
+    </div>
     </div>
     
     <!-------------------------------ITEM THREE--------------------------------->
     <div id="itemThree">
-      <h2 id="item_three_name"></h2>
-      <h5 class ="fp">$</h5><h5 class="fp" id="item_three_price"></h5>
+      <div class="boxes"><h1 class="fp" id="item_three_name"><h1 class="fp">:</h1><h3 class="fp"> $</h3><h3 class="fp" id="item_three_price"></h3></div>
       <!--<input type="number" id="itemQty3" min="1">-->
-      <select id="itemQty3">
+      <div class="backgroundBox">
+      <select class="options" id="itemQty3">
         <option value = "1">1</option>
         <option value = "2">2</option>
         <option value = "3">3</option>
         <option value = "4">4</option>
         <option value = "5">5</option>
       </select>
-      <button onclick="enterFood3()">Order Now</button>
+      <button onclick="enterFood3()" class="fButton">Order Now</button>
+    </div>
     </div>
     
     <!-------------------------------ITEM FOUR--------------------------------->
     <div id="itemFour">
-      <h2 id="item_four_name"></h2>
-      <h5 class="fp">$</h5><h5 class="fp" id="item_four_price"></h5>
+      <div class="boxes"><h1 class="fp" id="item_four_name"><h1 class="fp">:</h1><h3 class="fp"> $</h3><h3 class="fp" id="item_four_price"></h3></div>
       <!--<input type="number" id="itemQty4" min="1">-->
-      <select id="itemQty4">
+      <div class="backgroundBox">
+      <select class="options" id="itemQty4">
         <option value = "1">1</option>
         <option value = "2">2</option>
         <option value = "3">3</option>
         <option value = "4">4</option>
         <option value = "5">5</option>
       </select>
-      <button onclick="enterFood4()">Order Now</button>
+      <button onclick="enterFood4()" class="fButton">Order Now</button>
+    </div>
     </div>
     
     <!-------------------------------ITEM FIVE--------------------------------->
     <div id="itemFive">
-      <h2 id="item_five_name"></h2>
-      <h5 class ="fp">$</h5><h5 class="fp" id="item_five_price"></h5>
+      <div class="boxes"><h1 class="fp" id="item_five_name"><h1 class="fp">:</h1><h3 class="fp"> $</h3><h3 class="fp" id="item_five_price"></h3></div>
       <!--<input type="number" id="itemQty5" min="1">-->
-      <select id="itemQty5">
+      <div class="backgroundBox">
+      <select class="options" id="itemQty5">
         <option value = "1">1</option>
         <option value = "2">2</option>
         <option value = "3">3</option>
         <option value = "4">4</option>
         <option value = "5">5</option>
       </select>
-      <button onclick="enterFood5()">Order Now</button>
+      <button onclick="enterFood5()" class="fButton">Order Now</button>
+    </div>
     </div>
     <!-------------------------------ITEM SIX--------------------------------->
     <div id="itemSix">
-      <h2 id="item_six_name"></h2>
-      <h5 class ="fp">$</h5><h5 class="fp" id="item_six_price"></h5>
+      <div class="boxes"><h1 class="fp" id="item_six_name"><h1 class="fp">:</h1><h3 class="fp"> $</h3><h3 class="fp" id="item_six_price"></h3></div>
       <!--<input type="number" id="itemQty6" min="1">-->
-      <select id="itemQty6">
+      <div class="backgroundBox">
+      <select class="options" id="itemQty6">
         <option value = "1">1</option>
         <option value = "2">2</option>
         <option value = "3">3</option>
         <option value = "4">4</option>
         <option value = "5">5</option>
       </select>
-      <button onclick="enterFood6()">Order Now</button>
+      <button onclick="enterFood6()" class="fButton">Order Now</button>
+    </div>
     </div>
   
-    <div id="totalBoxPrice">
-      <h1>Your Order:</h1>
+    <div id="totalBoxPrice1">
+      <h1 class="titleName2">Your Order:</h1>
       <h1 id= "currentOrder"></h1>
       <h1 id= "currentOrder2"></h1>
       <h1 id= "currentOrder3"></h1>
       <h1 id= "currentOrder4"></h1>
       <h1 id= "currentOrder5"></h1>
       <h1 id= "currentOrder6"></h1>
-      <h1 id="currentTotal"></h1>
-      <button onclick="getAll()" id="checkout">Pay Now</button>
+      <h1 class="pf" id="currentTotal"></h1>
+      <button onclick="getAll()" id="checkout" class="pf">Pay Now</button>
       </div>
     <script src="script.js"></script>
   </body>
