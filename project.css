@@ -23,10 +23,11 @@ body{
   font-size: 13px;
   color: #4c4c4c;
   margin-top: 5px;
-  height: 10%;
   border-width: 1px;
   border-color: #4c414b;
   background-color: #ffedfd;
+  height: 4vh;
+  width: 8vw; 
 }
 #item_one_price{
   color: #4c414b;
@@ -126,7 +127,7 @@ color: #4c4c4c;
 border-width: 1px;
 border-color: #4c414b;
 background-color: #ffedfd;
-height: 8%;
+height: 7%;
 width: 10%;
 margin-left: 5px;
 }
@@ -136,9 +137,10 @@ color: #4c4c4c;
 border-width: 1px;
 border-color: #4c414b;
 background-color: #ffedfd;
-height: 8%;
-width: 15%;
+max-width: 6vw;
+max-height: 12vh;
 margin-left: 5px;
+
 }
 #checkout{
 font-size: 13px;
@@ -273,7 +275,7 @@ margin-top: 10px;
 }
 #totalBoxPrice2{
   width: 45vw;
-  height: 28vh;
+  height: 35vh;
   background-color: #ffedfd;
   border-style: solid;
   border-color: #4c414b;
